@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>test01</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script language="Javascript">
+
+	function fncShowHideInput(value)
+	{
+	    var input1 = document.getElementById("txtName2");
+	    var input2 = document.getElementById("txtName2");
+		if (input1 != '')
+		{
+		    alert("Welcome " + input1.value + input2.value + " !");
+		}
+		else
+		{
+		    alert("Please put");
+		}
+	}
+
+    </script>
+
+    <form name="form1" method="post" action="HtmlPage1.html">
+        <input type="text" name="txtName" id="txtName1">
+        <input type="text" name="txtName" id="txtName2">
+        <input type="button" name="chkShowInput" value="OK" OnClick="Javascript:fncShowHideInput(this);">
+    </form>
+</body>
+</html>
